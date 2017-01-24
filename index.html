@@ -8,6 +8,7 @@
     <script src="https://aframe.io/releases/0.4.0/aframe.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/16.3.5/Tween.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nunjucks/2.3.0/nunjucks.min.js"></script>
     <script src="libs/jquery.linq.min.js"></script>
       
     <script src="https://cdn.rawgit.com/ngokevin/aframe-animation-component/master/dist/aframe-animation-component.min.js"></script>
@@ -34,16 +35,16 @@
 
       <script>
 
-            $(document).ready(function () {
+        $(document).ready(function () {
 
-                $(document).keydown(function(e) {
-                    if(e.keyCode==66){
-                        // b pressed
-                            $.customComponents.sceneController.setSkyMode(!$.customComponents.crazyBG);
-                    }
-                });
-
+            $(document).keydown(function(e) {
+                if(e.keyCode==66){
+                    // b pressed
+                        $.customComponents.sceneController.setSkyMode(!$.customComponents.crazyBG);
+                }
             });
+
+        });
 
       </script>
 
